@@ -14,7 +14,7 @@ def load_model():
 @st.cache_data
 def load_training_data():
     data = pd.read_csv(
-        '/Users/berkebarantozkoparan/Desktop/spam detection/spam.csv',
+        'spam.csv',
         encoding='latin-1'
     )
     data['processed_text'] = data['Message'].apply(preprocess_text)

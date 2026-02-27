@@ -13,7 +13,7 @@ def preprocess_text(text):
     return text
 
 # Load the dataset
-data = pd.read_csv('/Users/berkebarantozkoparan/Desktop/spam detection/spam.csv', encoding='latin-1')
+data = pd.read_csv('spam.csv', encoding='latin-1')
 
 # Preprocess the text data
 data['processed_text'] = data['Message'].apply(preprocess_text)
